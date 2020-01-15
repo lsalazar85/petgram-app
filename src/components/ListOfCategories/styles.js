@@ -4,7 +4,7 @@ export const List = styled.ul`
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    padding: 0;
+    padding: 15px 0;
 `
 
 export const Item = styled.li`
