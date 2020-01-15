@@ -1,19 +1,14 @@
-# petgram Social Network
+# Petgram
 
-Petgram social network app
+Petgram is Social Media Network for pets.
 
 
 ## Run
 ```
-    yarn install
-    yarn start
-```
-
-```
     npm install
-    npm start
+    npm run dev
 ```
-Starts on `http://localhost:3000`
+Starts on `http://localhost:8080`
 
 ## Build
 ```
@@ -22,4 +17,3 @@ Starts on `http://localhost:3000`
 
 ## Package.json dependencies
 * React.js
-* Javascript
