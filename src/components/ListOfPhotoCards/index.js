@@ -8,7 +8,7 @@ export const ListOfPhotoCards = () => (
       [1, 2, 3, 4, 5].map(id => {
         return (
           <ItemsPhotos key={id}>
-            <PhotoCard />
+            <PhotoCard id={id} />
           </ItemsPhotos>
         )
       })
