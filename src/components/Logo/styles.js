@@ -6,7 +6,7 @@ export const Svg = styled.div`
     width: 100%;
     justify-content: flex-start;
     & svg {
-        width: 220px;
+        width: 300px;
         margin-left: -20px;
     }
 `

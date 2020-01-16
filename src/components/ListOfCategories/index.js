@@ -5,6 +5,7 @@ import { Category } from '../Category'
 import { Loader } from '../Loader'
 import { URL_API_CATEGORIES } from '../../constans'
 
+// Custom Hook fetch categories data
 function useCategoriesData () {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(false)
