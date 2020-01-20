@@ -1,8 +1,9 @@
 import React from 'react'
+import { Router } from '@reach/router'
 import { Logo } from './components/Logo'
 import { Home } from './pages/Home'
+import { Detail } from './pages/Detail'
 import { PhotoCardWithQuery } from './containers/PhotoCardWithQuery'
-import { Router } from '@reach/router'
 
 export const App = () => {
   const urlParams = new window.URLSearchParams(window.location.search)
@@ -18,6 +19,7 @@ export const App = () => {
             <Router>
               <Home path='/' />
               <Home path='/pet/:id' />
+              <Detail path='/detail/:detailId' />
             </Router>
           )
       }

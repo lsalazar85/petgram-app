@@ -1,5 +1,6 @@
 import React from 'react'
 import { string, number } from 'prop-types'
+import { Link } from '@reach/router'
 import { Article, ImgWrapper, Img } from './styles'
 import { useLocalStorage } from '../../hooks/useLocalStorage'
 import { useLazyLoader } from '../../hooks/useLazyLoader'
@@ -17,11 +18,11 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
       {
         show &&
         (<>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/detail/${id}`}>
             <ImgWrapper>
               <Img src={src} />
             </ImgWrapper>
-          </a>
+          </Link>
           <ToggleLikeMutation>
             {
               (toggleLike) => {
