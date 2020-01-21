@@ -15,5 +15,12 @@ Starts on `http://localhost:8080`
     npm run build
 ```
 
-## Package.json dependencies
+## Development Technologies
 * React.js
+* Reach Router
+* ReacT Icons
+* GraphQL & React Apollo 
+* Styled-Components
+* Lodash
+* Webpack
+
