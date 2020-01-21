@@ -2,13 +2,13 @@ import React from 'react'
 import { Router } from '@reach/router'
 import { Logo } from './components/Logo'
 import { NavBar } from './components/NavBar'
-import { UserLogged } from './components/UserLogged'
 import { Home } from './pages/Home'
 import { Detail } from './pages/Detail'
 import { Favs } from './pages/Favs'
 import { User } from './pages/User'
 import { NotRegisterUser } from './pages/NotRegisterUser'
 import { PhotoCardWithQuery } from './containers/PhotoCardWithQuery'
+import Context from './context'
 
 export const App = () => {
   const urlParams = new window.URLSearchParams(window.location.search)
@@ -27,7 +27,7 @@ export const App = () => {
                 <Home path='/pet/:id' />
                 <Detail path='/detail/:detailId' />
               </Router>
-              <UserLogged>
+              <Context.Consumer>
                 {
                   ({ isAuth }) =>
                     isAuth ? (
@@ -42,7 +42,7 @@ export const App = () => {
                       </Router>
                     )
                 }
-              </UserLogged>
+              </Context.Consumer>
             </>
           )
       }
